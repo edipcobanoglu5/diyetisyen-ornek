@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NutriLife ile iletişime geçin. Randevu alın, sorularınızı sorun.">
+  <title>İletişim | NutriLife</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌿</span>
+        NutriLife
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+          <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+          <li><a href="hizmetler.html" class="nav-link">Hizmetler</a></li>
+          <li><a href="iletisim.html" class="nav-link active">İletişim</a></li>
+          <li class="nav-cta"><a href="iletisim.html" class="btn btn-primary">Randevu Al</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>İletişim</h1>
+      <nav class="breadcrumb">
+        <a href="index.html">Anasayfa</a>
+        <span>/</span>
+        <span>İletişim</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h2>Bize Ulaşın</h2>
+          <p>Sorularınız için bize ulaşabilir veya aşağıdaki formu doldurarak randevu talep edebilirsiniz.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <strong>Adres</strong>
+                <span>Bağdat Cad. No:123, Kadıköy/İstanbul</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <strong>Telefon</strong>
+                <a href="tel:+902125550000">+90 (212) 555 00 00</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <strong>E-posta</strong>
+                <a href="mailto:info@nutrilife.com">info@nutrilife.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <strong>Çalışma Saatleri</strong>
+                <span>Pazartesi - Cumartesi: 09:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper fade-in">
+          <h3>Randevu Formu</h3>
+          <div class="form-success">Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.</div>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ad Soyad *</label>
+                <input type="text" id="name" name="name" placeholder="Adınız ve soyadınız" required>
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon *</label>
+                <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX" required>
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta *</label>
+              <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Konu *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Konu seçiniz</option>
+                <option value="kilo">Kilo Yönetimi</option>
+                <option value="sporcu">Sporcu Beslenmesi</option>
+                <option value="cocuk">Çocuk Beslenmesi</option>
+                <option value="hamilelik">Hamilelik Beslenmesi</option>
+                <option value="online">Online Danışmanlık</option>
+                <option value="hastalik">Hastalık Beslenmesi</option>
+                <option value="diger">Diğer</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesajınız *</label>
+              <textarea id="message" name="message" placeholder="Mesajınızı veya sorularınızı yazınız..." required></textarea>
+              <span class="form-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-wrapper fade-in">
+        <div class="map-placeholder">
+          <span>🗺️</span>
+          <p>Bağdat Cad. No:123, Kadıköy/İstanbul</p>
+          <p style="font-size: 0.85rem; margin-top: 8px;">Harita entegrasyonu için Google Maps API eklenebilir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">🌿</span>
+            NutriLife
+          </a>
+          <p>Sağlıklı beslenme ve yaşam tarzı değişikliği ile hedeflerinize ulaşmanız için profesyonel destek sunuyoruz.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div>
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html">Hizmetler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hizmetler</h4>
+          <ul class="footer-links">
+            <li><a href="hizmetler.html">Kilo Yönetimi</a></li>
+            <li><a href="hizmetler.html">Sporcu Beslenmesi</a></li>
+            <li><a href="hizmetler.html">Çocuk Beslenmesi</a></li>
+            <li><a href="hizmetler.html">Online Danışmanlık</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>İletişim</h4>
+          <ul class="footer-contact">
+            <li>📍 Bağdat Cad. No:123, Kadıköy/İstanbul</li>
+            <li>📞 +90 (212) 555 00 00</li>
+            <li>✉️ info@nutrilife.com</li>
+            <li>🕐 Pzt-Cmt: 09:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NutriLife. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
