@@ -918,9 +918,9 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  display: flex;
+  flex-direction: column; /* Öğelerin alt alta sıralanmasını sağlar */
+  gap: 30px; /* Elemanlar arası boşluk */
 }
 
 .contact-info h2 {
